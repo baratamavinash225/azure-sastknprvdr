@@ -28,8 +28,7 @@ class FixedSASTokenProvider implements SASTokenProvider {
     }
 
     @Override
-    public void initialize(Configuration configuration, String accountName)
-        throws IOException {
+    public void initialize(Configuration configuration, String accountName) {
         Objects.requireNonNull(configuration, "configuration must not be null");
         this.configuration = configuration;
     }
